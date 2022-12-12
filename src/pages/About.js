@@ -20,9 +20,9 @@ const About = (props) => {
                 your scaffolding needs. We look forward to working with you on your next project.
             </h3>
 
-            <div class="banner">
+            {/* <div class="banner">
                 <h1 class="banner-text">test</h1>
-            </div>
+            </div> */}
         </>
     );
 };

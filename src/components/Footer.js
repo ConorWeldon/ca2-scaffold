@@ -7,23 +7,9 @@ import AddLocationRoundedIcon from '@mui/icons-material/AddLocationRounded';
 import ContactlessRoundedIcon from '@mui/icons-material/ContactlessRounded';
 import MailRoundedIcon from '@mui/icons-material/MailRounded';
 
-
 import { Button } from '@mui/material';
 
 const Footer = (props) => {
-
-    const navigate = useNavigate();
-
-    const [anchorEl, setAnchorEl] = useState(null);
-    const open = Boolean(anchorEl);
-
-    const handleClick = (event) => {
-        setAnchorEl(event.currentTarget);
-    };
-
-    const handleClose = () => {
-        setAnchorEl(null);
-    };
 
     return (
         <>
@@ -37,7 +23,7 @@ const Footer = (props) => {
             </div>
 
             <div class="icons">
-                <Button startIcon={<FacebookRoundedIcon />}/>
+                <Button startIcon={<FacebookRoundedIcon />} color='primary' />
                 <Button startIcon={<AddLocationRoundedIcon />}/>
                 <Button startIcon={<ContactlessRoundedIcon />}/>
                 <Button startIcon={<MailRoundedIcon />}/>
