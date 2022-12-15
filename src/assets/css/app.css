@@ -1,3 +1,21 @@
+/* Custom cursor styles */
+body {
+  cursor: url(../images/cursor15.png), auto;
+}
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 0.7vw;
+  height: 3vh;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(green,black);
+  border-radius: 6px;
+}
+
+
+
 .image-slider img {
   height: 100vh;
   width: 100%;

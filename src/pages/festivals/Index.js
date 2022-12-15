@@ -30,8 +30,10 @@ const Index = () => {
 
     return (
         <>
-            <h2>Festivals</h2>
-            { festivalsList }
+            <div class="scrollable-content">
+                <h2>Festivals</h2>
+                { festivalsList }
+            </div>
         </>
     );
 };
