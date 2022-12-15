@@ -75,15 +75,15 @@ const Create = () => {
 
     <h2>Create Festival</h2>
     
-    <div className='form-group'>
-        <TextField name="title" label="Title" variant="filled" onChange={handleForm} error={errors.title} helperText={(errors.title) ? errors.title.message : ""} />
+    <div className='form-group' class="pad">
+        <TextField name="title" label="Title" variant="filled" fullWidth onChange={handleForm} error={errors.title} helperText={(errors.title) ? errors.title.message : ""} />
     </div>
 
-    <div className='form-group'>
-        <TextField name="description" label="Description" variant="filled" multiline rows={4} onChange={handleForm} error={errors.description} helperText={(errors.description) ? errors.description.message : ""} />
+    <div className='form-group' class="pad">
+        <TextField name="description" label="Description" variant="filled" fullWidth multiline rows={4} onChange={handleForm} error={errors.description} helperText={(errors.description) ? errors.description.message : ""} />
     </div>
 
-    <div className='form-group'>
+    <div className='form-group' class="pad">
         <FormControl variant='filled' fullWidth error={errors.city}>
             <InputLabel city='city-select'>City</InputLabel>
             <Select labelId='city-select' name="city" label="City" onChange={handleForm} >
@@ -98,12 +98,12 @@ const Create = () => {
         </FormControl>
     </div>
 
-    <div className='form-group'>
-        <TextField variant='filled' label='Start Date' type='datetime-local' name='start_date' InputLabelProps={{shrink: true}} onChange={handleForm} error={errors.start_date} helperText={errors.start_date?.message} />
+    <div className='form-group' class="pad">
+        <TextField variant='filled' label='Start Date' type='datetime-local' name='start_date' fullWidth InputLabelProps={{shrink: true}} onChange={handleForm} error={errors.start_date} helperText={errors.start_date?.message} />
     </div>
 
-    <div className='form-group'>
-        <TextField variant='filled' label='End Date' type='datetime-local' name='end_date' InputLabelProps={{shrink: true}} onChange={handleForm} error={errors.end_date} helperText={errors.end_date?.message} />
+    <div className='form-group' class="pad">
+        <TextField variant='filled' label='End Date' type='datetime-local' name='end_date' fullWidth InputLabelProps={{shrink: true}} onChange={handleForm} error={errors.end_date} helperText={errors.end_date?.message} />
     </div>
 
     <Button onClick={submitForm} variant='contained'>Submit</Button>

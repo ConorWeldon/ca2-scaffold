@@ -1,7 +1,8 @@
 import React from 'react';
 
+//My Image slider that I created
 import ImageSlider from '../components/ImageSlider';
-
+//LoginForm
 import LoginForm from "../components/LoginForm";
 
 

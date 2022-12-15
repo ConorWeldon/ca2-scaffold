@@ -24,13 +24,13 @@ const FestivalCard = (props) => {
         
         axios.delete(`https://festivals-api.vercel.app/api/festivals/${props.festival._id}`, {
             headers: {
-                "Authorization": "Bearer "
+                "Authorization": `Bearer ${token}`
             }
         })
              .then((response) => {
                  //Log data if successful
                  console.log(response.data);
-                 navigate('/festivals');
+                 navigate('/');
              })
              .catch((err) => {
                  //If not succesful log the error

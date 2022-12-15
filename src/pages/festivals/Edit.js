@@ -108,31 +108,33 @@ const Edit = () => {
 
     <h2>Edit Festival</h2>
     
-    <div className='form-group'>
+    <div className='form-group' class="pad">
         <TextField 
             name="title" 
             label="Title" 
             variant="filled" 
             onChange={handleForm} 
+            fullWidth
 
             error={errors.title} helperText={errors.title?.message}
             value={form.title} 
         />
     </div>
 
-    <div className='form-group'>
+    <div className='form-group' class="pad">
         <TextField 
             name="description" 
             label="Description" 
             variant="filled" multiline rows={4} 
-            onChange={handleForm} 
+            onChange={handleForm}
+            fullWidth 
 
             error={errors.description} helperText={(errors.description) ? errors.description.message : ""}
              value={form.description} 
         />
     </div>
 
-    <div className='form-group'>
+    <div className='form-group' class="pad">
         <FormControl variant='filled' fullWidth error={errors.city}>
             <InputLabel city='city-select'>City</InputLabel>
             <Select labelId='city-select' name="city" label="City" onChange={handleForm} value={form.city} >
@@ -147,12 +149,13 @@ const Edit = () => {
         </FormControl>
     </div>
 
-    <div className='form-group'>
+    <div className='form-group' class="pad">
         <TextField 
             variant='filled' 
             label='Start Date' 
             type='datetime-local' 
             name='start_date' 
+            fullWidth
             InputLabelProps={{shrink: true}} onChange={handleForm} 
             
             error={errors.start_date} 
@@ -160,12 +163,13 @@ const Edit = () => {
         />
     </div>
 
-    <div className='form-group'>
+    <div className='form-group' class="pad">
         <TextField 
             variant='filled' 
             label='End Date' 
             type='datetime-local' 
             name='end_date' 
+            fullWidth
             InputLabelProps={{shrink: true}} onChange={handleForm} 
             
             error={errors.end_date} helperText={errors.end_date?.message} 

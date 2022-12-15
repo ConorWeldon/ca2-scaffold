@@ -4,9 +4,9 @@ import { Stack } from '@mui/system';
 //My MUI Imports
 import Button from '@mui/material/Button';
 
-import { createClient } from 'pexels';
+/* import { createClient } from 'pexels';
 
-const client = createClient('563492ad6f91700001000001ee7365efc0f541d2a76151dede10a188');
+const client = createClient('563492ad6f91700001000001ee7365efc0f541d2a76151dede10a188'); */
 
 // All requests made with the client will be authenticated
 
@@ -15,7 +15,7 @@ class ImageSlider extends React.Component {
   // Set the initial state for the image index and the interval time
   state = {
     currentIndex: 0,
-    intervalTime: 3000, // 3 seconds
+    intervalTime: 5000, // 5 seconds
   };
 
   // Create the array of images for the slider

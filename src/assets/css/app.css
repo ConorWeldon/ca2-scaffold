@@ -89,6 +89,7 @@ img {
   justify-content: center;
   align-content: center;
   padding-bottom: 5vh;
+  color: white;
 }
 
 .head_text {
@@ -102,4 +103,41 @@ img {
   font-size: 12px;
   font-weight: 400;
   color: white;
+}
+
+.aboutPhoto {
+  position: absolute;
+  margin-left: -15vw;
+  max-width: 75%;
+  max-height: 75%;
+}
+
+.aboutText {
+  position: absolute;
+  width: 43.0725vw; /* 600px */
+  right: 5vw;
+  margin-top: 10vh;
+  font-weight: 400;
+}
+
+.iconsAbout {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  left: 46vw;
+  margin-top: 30vh;
+}
+
+.indexAbout {
+  margin-left: 40vw;
+  margin-top: 5vw;
+  width: 100%;
+}
+
+.heightAbout {
+  height: 75vh;
+}
+
+.pad {
+  margin: 2vh 0px 2vh 0px;
 }

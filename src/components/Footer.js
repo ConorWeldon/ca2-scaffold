@@ -1,6 +1,3 @@
-import { useState } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
-
 //Icons
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import AddLocationRoundedIcon from '@mui/icons-material/AddLocationRounded';

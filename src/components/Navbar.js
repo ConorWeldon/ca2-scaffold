@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-import Create from '../pages/festivals/Create';
+// import Create from '../pages/festivals/Create';
 
 //Loads only the Grid code here but in the example below loads all the code from package but only imports grid
 //import { Grid } from '@mui/system/Unstable_Grid';
@@ -48,7 +48,7 @@ const Navbar = (props) => {
                 aria-expanded={open ? 'true' : undefined}
                 onClick={handleClick}
             >
-                Festivals
+                Scaffolding
             </Button>
 
             <Button color="success" component={Link} to='/About'>
@@ -71,7 +71,7 @@ const Navbar = (props) => {
 
             {/* Turnary operator here, used to make my if statement */}
             {(props.authenticated) ? (
-                <Button variant='outlined' color="success" onClick={logout}>Logout</Button>
+                <Button variant='outlined' color="success" style={{margin: '0px 0px 0px 500px'}} onClick={logout}>Logout</Button>
             ) : (
                 ""
             )}
